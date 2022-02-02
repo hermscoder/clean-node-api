@@ -1,10 +1,15 @@
 {
     "compilerOptions": {
-        "outDir": "./dist",
-        "module": "commonjs", //quando gerar o JS o import e export vao estar no formato do commonJS, pq assim os browsers entendem
-        "target": "ES2019",
-        "esModuleInterop": true, //Os modulos que usam ainda o commonJS, o typescript internamente vai converter pra que possamos entender o import.
-        "allowJs": true, //Se tivermos arquivos no formato JS ao inves de JSON, quero que seja incluido no nosso diretorio /dist da forma correta
-        "strictNullChecks": true
-    }
+        "outDir": "dist",
+        "module": "commonjs",
+        "target": "es2019",
+        "esModuleInterop": true
+    },
+    "include": [
+      "src"
+    ],
+    "exclude": [
+      "**/*.spec.ts",
+      "**/*.test.ts"
+    ]
 }
