@@ -8,10 +8,7 @@
         "strictNullChecks": true
     },
     "include": [
+        // repeated from base config's "include" setting
         "src"
-    ],
-    "exclude": [
-        "**/*.spec.ts",
-        "**/*.test.ts"
     ]
 }
